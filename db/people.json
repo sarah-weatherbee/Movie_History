@@ -1,0 +1,14 @@
+{
+  "person1": {
+    "firstName": "Delbert",
+    "lastName": "Waddams"
+  },
+  "person2": {
+    "firstName": "Rita",
+    "lastName": "Metermaid"
+  },
+  "person3": {
+    "firstName": "Heraldo",
+    "lastName": "Riviera"
+  }
+}

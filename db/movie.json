@@ -1,0 +1,17 @@
+{
+  "movie1": {
+    "title": "Fievel goes west",
+    "movieRating": "G",
+    "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/51TB4ATHB8L._SY445_.jpg"
+  },
+  "movie2": {
+    "title": "The land before time",
+    "movieRating": "G",
+    "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/91M4Y3897AL._SY445_.jpg"
+  },
+  "movie3": {
+    "title": "The last unicorn",
+    "movieRating": "G",
+    "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/51kexQmX32L._SY445_.jpg"
+  }
+}
