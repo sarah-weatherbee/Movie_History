@@ -3,6 +3,7 @@ import 'firebase/auth';
 import util from '../../helpers/util';
 import movieData from '../../helpers/data/movieData';
 import userMovieData from '../../helpers/data/userMovieData';
+import watchList from '../watchlist/watchlist';
 
 
 const addToWatchlist = (e) => {
@@ -14,8 +15,11 @@ const addToWatchlist = (e) => {
     isWatched: false,
     rating: '',
   };
-  userMovieData.addMovieToWatchlist(newWatchListItem);
+  userMovieData.addMovieToWatchlist(newWatchListItem)
+    .then(() => watchList.getWatchListData())
+    .catch(err => console.error(err));
 };
+
 const addWatchListListeners = () => {
   const buttons = document.querySelectorAll('.watchList');
   buttons.forEach((button) => {

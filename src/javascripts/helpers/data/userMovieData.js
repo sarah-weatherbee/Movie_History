@@ -27,7 +27,9 @@ const getWatchList = userId => new Promise((resolve, reject) => {
       const watchListArray = [];
       Object.keys(watchListResults).forEach((watchListId) => {
         watchListResults[watchListId].id = watchListId;
-        watchListArray.push(watchListResults[watchListId]);
+        if (!watchListResults[watchListId].isWatched) {
+          watchListArray.push(watchListResults[watchListId]);
+        }
       });
       resolve(watchListArray);
     })
