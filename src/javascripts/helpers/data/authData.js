@@ -16,7 +16,7 @@ const checkLoginStatus = () => {
       moviesNavbar.classList.remove('hide');
       authNavbar.classList.add('hide');
       logoutNavbar.classList.remove('hide');
-      movies.movieStringBuilder(user.uid);
+      movies.getMovieData();
     } else {
       authDiv.classList.remove('hide');
       moviesDiv.classList.add('hide');

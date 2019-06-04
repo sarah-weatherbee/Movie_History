@@ -2,25 +2,25 @@
   "userMovie1": {
     "uid": "hCYhVHYXZjOgHTwZc1jytb5BMzB3",
     "movieId": "movie2",
-    "is_watched": "true",
-    "rating": "5 stars"
+    "isWatched": true,
+    "rating": 5
   },
   "userMovie2": {
     "uid": "hCYhVHYXZjOgHTwZc1jytb5BMzB3",
     "movieId": "movie1",
-    "is_watched": "true",
+    "isWatched": true,
     "rating": ""
   },
   "userMovie3": {
     "uid": "hCYhVHYXZjOgHTwZc1jytb5BMzB3",
     "movieId": "movie1",
-    "is_watched": "false",
+    "isWatched": false,
     "rating": ""
   },
   "userMovie4": {
     "uid": "status1",
     "movieId": "movie1",
-    "is_watched": "True",
-    "rating": "5 stars"
+    "isWatched": true,
+    "rating": 5
   }
 }
