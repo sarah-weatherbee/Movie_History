@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -29,7 +30,19 @@
     </div>
   <div id="navbar"></div>
   <div id="auth"></div>
+  <button id = "add-movies-button" class = "btn btn-primary">Add Movie</button>
   <div id="movies" class="hide"></div>
-
+  <div id="userMovie"></div>
+  <div id="new-movie" class="hide">
+      <form class="col-6 offset-3">
+        <div class="form-group">
+          <label for="name">Movie</label>
+          <input type="text" class="form-control" id="imageUrl" placeholder=" mg">
+          <input type="text" class="form-control" id="title" placeholder="Enter title">
+          <input type="text" class="form-control" id="movieRatingId" placeholder="Enter rating">
+        </div>
+        <button type="submit" id="saveNewMovie" class="btn btn-primary">Add Movie</button>
+      </form>
+  </div>
+  <div id="watchlist"></div>
 </body>
-</html>
