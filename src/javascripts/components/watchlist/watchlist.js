@@ -14,6 +14,7 @@ const movieStringBuilder = (movies) => {
     domString += `<h2>Rating: ${movie.movieRating}</h2>`;
     domString += `<img src="${movie.imageUrl}"/>`;
     domString += '<button type="button" class="btn btn-info rating">Add Rating</button>';
+    domString += `<button id="delete.${movie.id}" class="btn btn-danger watchlistDeleteButton">Delete</button>`;
     domString += '</div>';
     domString += '</div>';
   });
@@ -21,7 +22,7 @@ const movieStringBuilder = (movies) => {
 };
 
 const getWatchListData = () => {
-  movieData.getMovies().then((movies) => {
+  movieData.getMoviesByUid().then((movies) => {
     const userId = firebase.auth().currentUser.uid;
     userMovieData.getWatchList(userId).then((watchListItems) => {
       const watchlistMovies = SMASH.watchlistMovies(movies, watchListItems);

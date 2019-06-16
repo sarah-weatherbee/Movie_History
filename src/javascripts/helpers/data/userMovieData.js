@@ -17,8 +17,9 @@ const getUserMovies = () => new Promise((resolve, reject) => {
     .catch(err => reject(err));
 });
 
-const addMovieToWatchlist = watchlistObject => axios.post(`${firebaseUrl}/userMovies.json`, watchlistObject);
+const addUserMovie = watchlistObject => axios.post(`${firebaseUrl}/userMovies.json`, watchlistObject);
 
+const deletWatchlistMovie = userMovieId => axios.delete(`${firebaseUrl}/userMovies/${userMovieId}.json`);
 
 const getWatchList = userId => new Promise((resolve, reject) => {
   axios.get(`${firebaseUrl}/userMovies.json?orderBy="uid"&equalTo="${userId}"`)
@@ -39,8 +40,9 @@ const getWatchList = userId => new Promise((resolve, reject) => {
 const addNewMovie = userMovieObject => axios.post(`${firebaseUrl}/userMovies.json`, userMovieObject);
 
 export default {
+  deletWatchlistMovie,
   addNewMovie,
   getUserMovies,
-  addMovieToWatchlist,
+  addUserMovie,
   getWatchList,
 };
