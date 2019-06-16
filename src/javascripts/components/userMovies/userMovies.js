@@ -31,8 +31,9 @@ const newMovieButton = () => {
   document.getElementById('saveNewMovie').addEventListener('click', createNewMovie);
 };
 
+
 const showMovies = () => {
-  const domString = '<button id="add-movies-button" class="btn btn-info">Add Movie</button>';
+  const domString = '<button id="add-movies-button" class="btn btn-info">Add to movies for sale list</button>';
   util.printToDom('userMovie', domString);
   document.getElementById('add-movies-button').addEventListener('click', newMovieButton);
 };
